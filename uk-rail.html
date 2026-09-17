@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UK Rail Ticket Sales and Journey Outcomes Analysis portfolio case study by Sanduprabha Rashmindi." />
+  <title>UK Rail Analysis | Sanduprabha Rashmindi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html#projects">← Back to projects</a></div>
+      <div class="eyebrow">Power BI portfolio case study</div>
+      <h1>UK Rail Ticket Sales & Journey Outcomes Analysis</h1>
+      <p class="hero-copy">
+        A small end-to-end analysis of 31,653 mock UK National Rail ticket transactions, focused on purchasing patterns,
+        gross ticket sales and the journey outcomes attached to those ticket records.
+      </p>
+      <div class="button-row">
+        <a class="button primary" href="https://github.com/mindyverse/uk-rail-ticket-sales-journey-outcomes-analysis" target="_blank" rel="noreferrer">View GitHub Repository</a>
+      </div>
+
+      <div class="project-screenshot">
+        <img src="https://raw.githubusercontent.com/mindyverse/uk-rail-ticket-sales-journey-outcomes-analysis/main/dashboard.png" onerror="this.onerror=null;this.src='uk-rail-dashboard.png';" alt="UK Rail Ticket Sales and Journey Outcomes Power BI dashboard" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="grid two">
+          <div class="card">
+            <div class="section-kicker">Project purpose</div>
+            <h2 class="section-title" style="font-size:34px;">What I wanted to understand</h2>
+            <p>
+              I wanted to understand ticket purchasing patterns, gross ticket sales and journey outcomes using a dataset that was small enough to complete carefully but large enough to practise a real Power BI workflow.
+            </p>
+          </div>
+          <div class="card">
+            <div class="section-kicker">Tools</div>
+            <h2 class="section-title" style="font-size:34px;">What I used</h2>
+            <div class="skill-chips">
+              <span>Power BI</span><span>Power Query</span><span>DAX</span><span>GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi"><strong>31,653</strong><span>Ticket transactions</span></div>
+          <div class="kpi"><strong>£741,921</strong><span>Gross ticket sales</span></div>
+          <div class="kpi"><strong>£23.44</strong><span>Average ticket price</span></div>
+          <div class="kpi"><strong>86.82%</strong><span>Ticket records marked On Time</span></div>
+          <div class="kpi"><strong>13.18%</strong><span>Disrupted ticket records</span></div>
+          <div class="kpi"><strong>1,118</strong><span>Refund requests</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-kicker">My process</div>
+        <h2 class="section-title">From raw CSV to a dashboard I could defend.</h2>
+        <div class="grid three">
+          <div class="card"><h3>01 • Audited the data</h3><p>I checked data types, missing values, duplicates, category consistency and whether blanks made sense in the business context.</p></div>
+          <div class="card"><h3>02 • Cleaned carefully</h3><p>I standardised inconsistent delay-reason labels and kept legitimate blanks instead of deleting them automatically.</p></div>
+          <div class="card"><h3>03 • Built the analysis</h3><p>I created DAX measures and visuals for ticket sales, routes, journey outcomes, disruption causes, purchase channels and monthly sales.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid two">
+          <div class="card">
+            <div class="section-kicker">Key findings</div>
+            <h2 class="section-title" style="font-size:34px;">What the dataset showed</h2>
+            <ul class="fact-list">
+              <li>Advance tickets generated the highest gross ticket sales: £309,274.</li>
+              <li>Online purchases accounted for 18,521 transactions compared with 13,132 station purchases.</li>
+              <li>Manchester Piccadilly → Liverpool Lime Street was the most frequently recorded route, with 4,628 transactions.</li>
+              <li>Weather was the most frequently recorded disruption cause after category standardisation.</li>
+              <li>There were 1,118 refund requests among 4,172 disrupted ticket records.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="section-kicker">What I learned</div>
+            <h2 class="section-title" style="font-size:34px;">The important part was not just the charts.</h2>
+            <p>
+              The project helped me practise checking whether a metric was genuinely supported by the data before using it.
+              For example, I used “gross ticket sales” rather than profit or net revenue because the dataset does not contain operating costs or confirmed refund payments.
+            </p>
+            <div class="note" style="margin-top:18px;">
+              The source is mock UK National Rail data. The results are portfolio analysis and should not be interpreted as official National Rail performance statistics.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-card">
+        <a class="button primary" href="index.html#projects">Back to Portfolio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container">Built by Sanduprabha Rashmindi • Portfolio updated 2026</div></footer>
+</body>
+</html>
