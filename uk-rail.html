@@ -13,10 +13,12 @@
 <body>
   <nav class="site-nav" aria-label="Main navigation">
     <div class="container nav-inner">
+      <a class="brand" href="index.html#top">Sanduprabha Rashmindi</a>
       <div class="nav-links">
         <a href="index.html#about">About</a>
         <a href="index.html#projects">Projects</a>
         <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
       </div>
     </div>
   </nav>
@@ -24,17 +26,16 @@
   <header class="project-hero">
     <div class="container">
       <div class="breadcrumb"><a href="index.html#projects">← Back to projects</a></div>
-      <div class="eyebrow">Power BI portfolio case study</div>
+      <div class="eyebrow">Power BI case study</div>
       <h1>UK Rail Ticket Sales & Journey Outcomes Analysis</h1>
       <p class="hero-copy">
-        A small end-to-end analysis of 31,653 mock UK National Rail ticket transactions, focused on purchasing patterns,
-        gross ticket sales and the journey outcomes attached to those ticket records.
+        An end-to-end Power BI project using 31,653 mock UK National Rail ticket records to explore purchasing patterns, gross ticket sales and journey outcomes.
       </p>
       <div class="button-row">
         <a class="button primary" href="https://github.com/mindyverse/uk-rail-ticket-sales-journey-outcomes-analysis" target="_blank" rel="noreferrer">View GitHub Repository</a>
       </div>
 
-      <div class="project-screenshot">
+      <div class="project-screenshot hero-screenshot">
         <img src="https://raw.githubusercontent.com/mindyverse/uk-rail-ticket-sales-journey-outcomes-analysis/main/dashboard.png" onerror="this.onerror=null;this.src='uk-rail-dashboard.png';" alt="UK Rail Ticket Sales and Journey Outcomes Power BI dashboard" />
       </div>
     </div>
@@ -43,17 +44,17 @@
   <main>
     <section>
       <div class="container">
-        <div class="grid two">
+        <div class="grid two case-grid">
           <div class="card">
             <div class="section-kicker">Project purpose</div>
-            <h2 class="section-title" style="font-size:34px;">What I wanted to understand</h2>
+            <h2 class="section-title compact-title">What I wanted to understand</h2>
             <p>
-              I wanted to understand ticket purchasing patterns, gross ticket sales and journey outcomes using a dataset that was small enough to complete carefully but large enough to practise a real Power BI workflow.
+              I wanted to practise a complete Power BI workflow using a dataset with enough detail to check data quality, build useful measures and answer clear business questions.
             </p>
           </div>
           <div class="card">
             <div class="section-kicker">Tools</div>
-            <h2 class="section-title" style="font-size:34px;">What I used</h2>
+            <h2 class="section-title compact-title">What I used</h2>
             <div class="skill-chips">
               <span>Power BI</span><span>Power Query</span><span>DAX</span><span>GitHub</span>
             </div>
@@ -74,10 +75,10 @@
     <section>
       <div class="container">
         <div class="section-kicker">My process</div>
-        <h2 class="section-title">From raw CSV to a dashboard I could defend.</h2>
-        <div class="grid three">
-          <div class="card"><h3>01 • Audited the data</h3><p>I checked data types, missing values, duplicates, category consistency and whether blanks made sense in the business context.</p></div>
-          <div class="card"><h3>02 • Cleaned carefully</h3><p>I standardised inconsistent delay-reason labels and kept legitimate blanks instead of deleting them automatically.</p></div>
+        <h2 class="section-title">How I worked through the data.</h2>
+        <div class="grid three process-grid">
+          <div class="card"><h3>01 • Checked the data</h3><p>I checked data types, missing values, duplicates, category consistency and whether blanks made sense in the business context.</p></div>
+          <div class="card"><h3>02 • Cleaned the data</h3><p>I standardised inconsistent delay-reason labels and kept legitimate blanks instead of removing them automatically.</p></div>
           <div class="card"><h3>03 • Built the analysis</h3><p>I created DAX measures and visuals for ticket sales, routes, journey outcomes, disruption causes, purchase channels and monthly sales.</p></div>
         </div>
       </div>
@@ -85,10 +86,10 @@
 
     <section>
       <div class="container">
-        <div class="grid two">
+        <div class="grid two case-grid">
           <div class="card">
             <div class="section-kicker">Key findings</div>
-            <h2 class="section-title" style="font-size:34px;">What the dataset showed</h2>
+            <h2 class="section-title compact-title">What I found</h2>
             <ul class="fact-list">
               <li>Advance tickets generated the highest gross ticket sales: £309,274.</li>
               <li>Online purchases accounted for 18,521 transactions compared with 13,132 station purchases.</li>
@@ -99,12 +100,11 @@
           </div>
           <div class="card">
             <div class="section-kicker">What I learned</div>
-            <h2 class="section-title" style="font-size:34px;">The important part was not just the charts.</h2>
+            <h2 class="section-title compact-title">The important part was not just the charts.</h2>
             <p>
-              The project helped me practise checking whether a metric was genuinely supported by the data before using it.
-              For example, I used “gross ticket sales” rather than profit or net revenue because the dataset does not contain operating costs or confirmed refund payments.
+              The project helped me practise checking whether a metric was genuinely supported by the data before using it. For example, I used “gross ticket sales” rather than profit or net revenue because the dataset does not contain operating costs or confirmed refund payments.
             </p>
-            <div class="note" style="margin-top:18px;">
+            <div class="note">
               The source is mock UK National Rail data. The results are portfolio analysis and should not be interpreted as official National Rail performance statistics.
             </div>
           </div>
@@ -112,7 +112,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="back-section">
       <div class="container contact-card">
         <a class="button primary" href="index.html#projects">Back to Portfolio</a>
       </div>
